@@ -31,5 +31,14 @@ console.log(index);
 names.splice(0,1); //delete elements in array, 1st array the 1st element to be deleted
 console.log(names);
 
-names.splice(2,0, 'Matt'); //inserts elements
+names.splice(2,0, 'Matt'); //inserts elements, 0-ZERO means don't delete but add the item on the index two-2
 console.log(names);
+
+names.splice(1,1, 'Haily');
+console.log(names);
+
+var numbers = [39,6,1,3,7,53,9];
+console.log(numbers.sort());
+
+var months = [1, 'march', 'jan', 23, 'dec', 'may', 8];
+console.log(months.sort());
