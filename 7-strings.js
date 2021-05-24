@@ -11,5 +11,6 @@ console.log(str.substr(3,6)); //from length
 console.log((str.toLowerCase()));
 console.log(str.toUpperCase());
 console.log(str.trim());
+
 var array = str.split(' ');
 console.log(array);
