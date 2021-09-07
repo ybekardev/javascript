@@ -112,3 +112,28 @@ function sayName(name) {
 
 // calling the function after 2 seconds
 setTimeout(greet, 2000, 'John', sayName);
+
+/*
+JSON	JavaScript Object
+The key in key/value pair should be in double quotes.	The key in key/value pair can be without double quotes.
+JSON cannot contain functions.	JavaScript objects can contain functions.
+JSON can be created and used by other programming languages.	JavaScript objects can only be used in JavaScript.
+
+You can convert JSON data to a JavaScript object using the built-in JSON.parse() function.
+You can also convert JavaScript objects to JSON format using the JavaScript built-in JSON.stringify() function.
+*/
+
+// json object
+const jsonData = '{ "name": "John", "age": 22 }';
+// converting to JavaScript object
+const obj = JSON.parse(jsonData);
+// accessing the data
+console.log(obj.name); // John
+
+
+// JavaScript object
+const jsonData = { "name": "John", "age": 22 };
+// converting to JSON
+const obj = JSON.stringify(jsonData);
+// accessing the data
+console.log(obj); // "{"name":"John","age":22}"
